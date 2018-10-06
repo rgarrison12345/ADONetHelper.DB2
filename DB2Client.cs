@@ -32,7 +32,7 @@ namespace ADONetHelper.DB2Client
     /// A client class thaat queries DB2 database system
     /// </summary>
     /// <seealso cref="ADONetHelper.DbClient" />
-    public sealed class DB2Client : DbClient
+    public  class DB2Client : DbClient
     {
         #region Fields/Properties        
         /// <summary>
@@ -41,7 +41,7 @@ namespace ADONetHelper.DB2Client
         /// <value>
         /// The connection.
         /// </value>
-        private DB2Connection Connection
+        protected DB2Connection Connection
         {
             get
             {
